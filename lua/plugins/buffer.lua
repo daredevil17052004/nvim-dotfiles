@@ -5,7 +5,7 @@ return{
   config = function()
     require'bufferline'.setup {
       -- General options
-      animation = true,                  
+      animation = false,                  
       auto_hide = false,                 
       tabpages = true,                   
       closable = true,                   
@@ -41,7 +41,7 @@ return{
     -- Add your key mappings here
     vim.keymap.set('n', '<C-Tab>', '<Cmd>BufferNext<CR>', { silent = true })
     vim.keymap.set('n', '<C-S-Tab>', '<Cmd>BufferPrevious<CR>', { silent = true })
-    vim.keymap.set('n', '<C-w>', '<Cmd>BufferClose<CR>', { silent = true })
+    vim.keymap.set('n', '<C-w>', '<Cmd>BufferClose<CR>', { silent = false })
     vim.keymap.set('n', '<C-S-w>', '<Cmd>BufferRestore<CR>', { silent = true })
 
 
